@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h2>JavaScript</h2>
+
+        <p id="demo">Ejecutar alerta.</p>
+
+        <button type="button" onclick="miAlerta()">Ejecutar alerta</button>
+
+        <p id="demo">Abrir pagina.</p>
+
+        <button type="button" onclick="abrir()">Ejecutar alerta</button>
+
+
+        <script src="js/miAlerta.js" ></script>
+        <script src="js/abrirPagina.js"></script>
+        <script src="js/validateForm.js"></script>
+
+        <h2>Ciclo For</h2>
+
+        <p id="ciclo"></p>
+
+        <script>
+         var dias = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes"];
+         var text = "";
+         var i;
+         for (i = 0; i < dias.length; i++) {
+             text += dias[i] + "<br>";
+         }
+         document.getElementById("ciclo").innerHTML = text;
+        </script>
+
+        <h2>Ciclo While</h2>
+
+        <p id="while"></p>
+
+        <script>
+         var text2 = "";
+         var i = 0;
+         while (i < 10) {
+             text2 += "<br>Numero " + i;
+             i++;
+         }
+         document.getElementById("while").innerHTML = text2;
+        </script>
+
+
+        <form name="myForm" action="" onsubmit="return validateForm()" method="post">
+            Name: <input type="text" name="fname"><br>
+            email: <input type="email" name="fname2">
+            <input type="submit" value="Submit">
+        </form>
+
+    </body>
+</html>
